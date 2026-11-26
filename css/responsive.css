@@ -1,0 +1,51 @@
+/* Breakpoints follow layout needs: 1100 nav/footer, 900 stacking, 600 small phones, 380 tiny. */
+@media (max-width:1100px){
+  .nav,.header-actions .btn{display:none}
+  .burger{display:block}
+  .f-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (min-width:901px){
+  .c-info{position:sticky;top:calc(var(--header-h) + var(--announce-h) + 1.25rem)}
+}
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:minmax(0,1fr);gap:2rem}
+  .hero-img{height:auto;min-height:0;aspect-ratio:4/5;max-height:70svh; }
+  .hero-copy{order:1;}
+  .hero-media{order:-1;}
+  .split,.cat-intro,.pd-grid,.c-grid,.j-hero,.feature,.about-hero{grid-template-columns:minmax(0,1fr)}
+  .about-hero .frame{max-height:none;aspect-ratio:4/5;max-width:520px}
+  .feature .frame{aspect-ratio:4/3}
+  .gallery{grid-template-columns:minmax(0,1fr);position:static}
+  .thumbs{flex-direction:row;order:2;max-height:none;overflow-x:auto;overflow-y:hidden}
+  .thumbs button{width:72px}
+  .main-img{max-height:none}
+  .j-grid{grid-template-columns:minmax(0,1fr)}
+  .j-hero-imgs{max-width:520px}
+  .related{grid-template-columns:minmax(0,1fr)}
+  .related a{aspect-ratio:16/9}
+  .v-cloth .chero{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .v-cloth .chero .frame:nth-child(3){display:none}
+}
+@media (max-width:700px){
+  .cats{grid-template-columns:minmax(0,1fr)}
+  .cat-tile{aspect-ratio:4/3}
+}
+@media (max-width:600px){
+  body{font-size:1rem}
+  .announce{font-size:.64rem;letter-spacing:.1em}
+  .brand{font-size:1.2rem;gap:.55rem}
+  .brand img{height:36px;width:36px}
+  .pgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem .9rem}
+  .pcard h3{font-size:1.12rem}
+  .pcard-cat{font-size:.64rem}
+  .f-grid,.form-row{grid-template-columns:minmax(0,1fr)}
+  .f-bottom{flex-direction:column}
+  .btn-row .btn,.cta-band .btn,.pd-info>.btn,.c-form .btn{width:100%}
+  .sec-tools{width:100%;justify-content:space-between}
+  .hero-tag{left:.75rem;bottom:.75rem;max-width:200px;font-size:1.05rem}
+  .c-form{padding:1.25rem}
+  .mm-link,.mm-toggle{font-size:1.6rem}
+}
+@media (max-width:380px){
+  .pgrid{grid-template-columns:minmax(0,1fr)}
+}

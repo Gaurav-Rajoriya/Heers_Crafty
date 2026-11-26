@@ -1,0 +1,10 @@
+:root{
+  --aubergine:#30232B; --porcelain:#F6F1E8; --terracotta:#B96F52; --sage:#8B9278;
+  --ink:#292725; --brass:#B18A55; --white:#FFFFFF;
+  --terracotta-dark:#9A5740; --terracotta-btn:#A25B41; --terracotta-btn-hover:#864A33; --line:rgba(41,39,37,.14); --porcelain-deep:#EDE5D6;
+  --font-head:"Cormorant Garamond","Playfair Display",Georgia,serif;
+  --font-body:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --ease:cubic-bezier(.22,.8,.24,1);
+  --pad:clamp(1.25rem,4vw,4rem); --max:1320px; --radius:2px; --header-h:76px; --announce-h:34px;
+  --s1:.5rem;--s2:1rem;--s3:1.5rem;--s4:2.5rem;--s5:4rem;--s6:clamp(4rem,9vw,8rem);
+}

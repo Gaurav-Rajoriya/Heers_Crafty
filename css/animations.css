@@ -1,0 +1,16 @@
+/* initial states only when JS+GSAP confirmed (class added by animations.js) */
+.gsap-on [data-reveal],.gsap-on [data-stagger]>*{opacity:0;transform:translateY(34px)}
+.gsap-on [data-mask]{clip-path:inset(0 0 100% 0)}
+.gsap-on .hero h1 .ln>span{transform:translateY(110%)}
+.gsap-on .hero .lead,.gsap-on .hero-cta,.gsap-on .hero .eyebrow,.gsap-on .hero-tag{opacity:0}
+.gsap-on .hero-img{clip-path:inset(0 0 0 100%)}
+body{opacity:1;transition:opacity .35s ease}
+body.leaving{opacity:0}
+@media (prefers-reduced-motion:reduce){
+ .gsap-on [data-reveal],.gsap-on [data-stagger]>*{opacity:1!important;transform:none!important}
+ .gsap-on [data-mask],.gsap-on .hero-img{clip-path:none!important}
+ .gsap-on .hero h1 .ln>span{transform:none!important}
+ .gsap-on .hero .lead,.gsap-on .hero-cta,.gsap-on .hero .eyebrow,.gsap-on .hero-tag{opacity:1!important}
+ *{transition-duration:.01ms!important;scroll-behavior:auto!important}
+ body.leaving{opacity:1}
+}
